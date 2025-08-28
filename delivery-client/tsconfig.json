@@ -1,0 +1,41 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./app/*"
+      ],
+      "@/components/*": [
+        "./components/*"
+      ],
+      "@/screens/*": [
+        "./screens/*"
+      ],
+      "@/assets/*": [
+        "./assets/*"
+      ],
+      "@/utils/*": [
+        "./utils/*"
+      ],
+      "@/hooks/*": [
+        "./hooks/*"
+      ],
+      "@/types/*": [
+        "./types/*"
+      ],
+      "@/constants/*": [
+        "./constants/*"
+      ]
+    }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
